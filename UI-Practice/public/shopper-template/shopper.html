@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .brand-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        header {
+            font-style: 'arial';
+            font-size: 21px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        nav span {
+            margin-right: 25px;
+        }
+        .shortcut-buttons span {
+            margin-right: 15px;
+        }
+        .top-bar {
+            font-style: 'arial';
+            font-size: 17px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #cacaca;
+        }
+        .top-bar-content span {
+            margin-right: 20px;
+        }
+        .top-bar-content select {
+            /* appearance: none;   */
+            background-color: #f0f0f0; /* Background color */
+            border: 1px solid #ccc; /* Border styling */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px 10px; /* Padding inside the select box */
+            font-size: 15px; /* Font size */
+            font-family: Arial, Helvetica, sans-serif; /* Font styling */
+            cursor: pointer; 
+        }
+        article {
+            font-style: 'arial';
+            font-size: 23px;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #070707;
+        }
+        .bi-lightning-fill {
+            color: gold;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        section {
+            height: 390px;
+        }
+        footer {
+            background-color: black;
+            padding: 20px;
+            color:white;    
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: Arial;
+        }
+        .footer-brand-title {
+            font-size: 21px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-title~span {
+            display: block;
+            margin-bottom: 15px;
+            font-family: Arial;
+        }
+        address span {
+            display: block;
+            margin-bottom: 15px;
+            font-family: Arial;
+        }
+        .footer-brand-title~div span {
+            margin-right: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <span class="bi bi-truck">Free Shipping Worldwide</span>
+                <select>
+                    <option value="USA"><span class="bi bi-flag-fill">USA</span></option>
+                    <option value="India"><span class="bi bi-flag-fill">India</span></option>
+                    <option value="Europe"><span class="bi bi-flag-fill">Canada</span></option>
+                </select>
+                <select>
+                    <option value="USA"><span class="bi bi-currency-dollar">USD</span></option>
+                    <option value="India"><span class="bi bi-currency-rupee">INR</span></option>
+                    <option value="Europe"><span class="bi bi-currency-euro">EURO</span></option>
+                </select>
+            </div>
+            <div class="shortcut-buttons">
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-youtube"></span>
+            </div>
+        </div>
+        <header>
+            <div>
+                <span class="brand-title">Shopper.</span>
+            </div>
+            <nav>
+                <span>Home</span>                
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blogs</span>
+                <span>Docs</span>
+            </nav>
+            <div class="shortcut-buttons">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart-fill"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </header>
+        <article>
+            <span class="bi bi-lightning-fill"></span>
+            <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+            <span class="bi bi-lightning-fill"></span>
+        </article>
+        <section>
+
+        </section>
+        <footer>
+            <div>
+                <div class="footer-brand-title">Shopper</div>
+                <div>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+            <div>
+                <div class="footer-title">SHOP</div>
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kids' Shopping</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+            <div>
+                <div class="footer-title">CONTACT</div>
+                <address>
+                    <span>1-202-555-0105</span>
+                    <span>1-202-555-0106</span>
+                    <span>help@shopper.com</span>
+                </address>
+            </div>
+       </footer>    
+    </div>
+</body>
+</html>
