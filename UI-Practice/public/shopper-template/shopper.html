@@ -59,9 +59,6 @@
             margin-left: 2px;
             margin-right: 2px;
         }
-        section {
-            height: 390px;
-        }
         footer {
             background-color: black;
             padding: 20px;
@@ -93,6 +90,76 @@
         .footer-brand-title~div span {
             margin-right: 10px;
             font-size: 17px;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 5px;
+            margin-top: 10px;
+        }
+        .men, .women, .kids {
+            height: 450px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .women {
+            background-image: url("../img/fashion1.jpg");
+        }
+        .men {
+            background-image:  url("../img/fashion2.jpg");
+        }
+        .kids {
+            background-image: url("../img/fashion3.jpg");
+        }
+
+        .title {
+            font-size: 45px;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+        }
+        button {
+            width: 150px;
+            font-size: 15px;
+        }
+        .features {
+            margin-top: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial;
+        }
+        .features .bi {
+            color:red;
+        }
+        .features div {
+            margin-bottom: 10px;
+        }
+        .feature-text {
+            color:gray;
+        }
+        .site-main {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .site-main-title {
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .site-main-subtitle {
+            color:gray;
+        }
+        .site-main-text {
+            font-family: Arial;
+            width: 500px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -144,8 +211,70 @@
             <span class="bi bi-lightning-fill"></span>
         </article>
         <section>
-
-        </section>
+            <main>
+                <div class="women">
+                    <div>
+                        <h1 class="title">Women</h1>
+                        <button>Shop Women <span class="bi bi-arrow-right"></span> </button>
+                    </div>
+                </div>
+                <div class="men">
+                    <div>
+                        <h1 class="title">Men</h1>
+                        <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+                <div class="kids">
+                    <div>
+                        <h1 class="title">Kids</h1>
+                        <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+            </main>
+            <div class="features">
+                <div>
+                    <div>
+                        <span class="bi bi-truck"></span> FREE SHIPPING
+                    </div>
+                    <div class="feature-text">
+                        From all orders over $100
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-arrow-repeat"></span> FREE RETURNS
+                    </div>
+                    <div class="feature-text">
+                        Return money within 30 days
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-lock"></span> SECURE SHOPPING
+                    </div>
+                    <div class="feature-text">
+                        You're in safe hands
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="bi bi-tag"></span> OVER 10,000 STYLES
+                    </div>
+                    <div class="feature-text">
+                        We have everything you need
+                    </div>
+                </div>
+            </div>
+            <div class="site-main">
+               <div>
+                 <div class="site-main-subtitle">NEW COLLECTION</div>
+                 <div class="site-main-title">Best Picks 2024</div>
+                 <div class="site-main-text">
+                    Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.
+                 </div>
+               </div>
+            </div>
+       </section>
         <footer>
             <div>
                 <div class="footer-brand-title">Shopper</div>
