@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <span class="bi bi-shop"></span> Shop
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropup">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#menu">
+                        <span class="bi bi-globe"></span>
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" id="menu">
+                        <li class="dropdown-item"><span class="dropdown-item-text">English</span></li>
+                        <li class="dropdown-item"><span class="dropdown-item-text">हिंदी</span></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><span class="dropdown-item-text">Help?</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
